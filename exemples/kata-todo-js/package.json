@@ -1,0 +1,29 @@
+{
+  "name": "kata-todo-js",
+  "version": "0.0.1",
+  "description": "Todo server written in JavaScript",
+  "private": true,
+  "scripts": {
+    "lint": "eslint .",
+    "cover": "istanbul cover node_modules/.bin/_mocha -- --reporter dot --recursive lib",
+    "test": "mocha --colors --reporter spec --recursive lib"
+  },
+  "author": "Arpinum",
+  "license": "MIT",
+  "repository": "https://github.com/michaelborde/kata-todo-js.git",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.11.0",
+    "istanbul": "^0.4.5",
+    "jshint": "^2.9.4",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.6",
+    "sinon-chai": "^2.8.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "lodash": "^4.17.2",
+    "node-uuid": "^1.4.7"
+  }
+}
