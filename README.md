@@ -32,12 +32,10 @@ La présentation de l'exercice du jeu de la vie est disponible dans le répertoi
 
 ## Nous en avons parlé
 
-* [Working Effectively With Legacy Code]
 * [Refactoring]
 * [cyber-dojo]
 * [Mocks Aren't Stubs]
 * [Pour en finir avec les Stubs et les Mocks]
-* [Inversion of Control Containers and the Dependency Injection pattern]
 * [Test pyramid]
 
 ## Licence
