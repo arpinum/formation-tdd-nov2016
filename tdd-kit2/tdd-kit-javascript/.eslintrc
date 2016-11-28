@@ -1,0 +1,22 @@
+{
+  "extends": "eslint:recommended",
+  "rules": {
+    "no-console": 0
+  },
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "globals": {
+    "describe": false,
+    "beforeEach": false,
+    "before": false,
+    "afterEach": false,
+    "after": false,
+    "it": false,
+    "context": false
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "tdd-kit-javascript",
+  "version": "0.0.1",
+  "description": "Javascript BDD base project",
+  "private": true,
+  "scripts": {
+    "eslint": "eslint .",
+    "mocha": "mocha lib",
+    "cover": "istanbul cover node_modules/.bin/_mocha -- --reporter dot --recursive lib",
+    "test": "npm run mocha; code=$?; npm run eslint; exit $((${code}+$?))"
+  },
+  "author": "Arpinum",
+  "license": "MIT",
+  "repository": "arpinum/tdd-kit-javascript.git",
+  "devDependencies": {
+    "chai": "3.5.0",
+    "chai-as-promised": "6.0.0",
+    "eslint": "3.11.0",
+    "istanbul": "0.4.5",
+    "mocha": "3.2.0",
+    "sinon": "1.17.6",
+    "sinon-as-promised": "4.0.2",
+    "sinon-chai": "2.8.0"
+  },
+  "dependencies": {
+    "lodash": "4.17.2"
+  }
+}
