@@ -3,12 +3,39 @@
 ## Requirements
 
 * [CMake]
-* [Google Test]
-* [Google Mock]
+* [Google Test] (see below)
+* [Google Mock] (see below)
 
-## Generate Makefile
+## Build GTest and GMock
 
-    cmake CMakeLists.txt
+Clone latest googletest release (ex release-1.8.0):
+
+    git clone --branch release-1.8.0 https://github.com/google/googletest.git
+
+Build GTest:
+
+    cd google_test_dir/googletest
+    cmake .
+    make
+
+Build GMock:
+
+    cd google_test_dir/googlemock
+    cmake .
+    make
+
+## Export GTest and GMock env variables
+
+    export GTEST_ROOT=google_test_dir/googletest
+    export GMOCK_ROOT=google_test_dir/googlemock
+
+You can also set those variables in your `.profile`.
+
+## Generate Makefile for tdd-kit-cpp
+
+    mkdir build
+    cd build
+    cmake ..
 
 ## Build
 
