@@ -45,6 +45,26 @@ You can also set those variables in your `.profile`.
 
     ./runtests
 
+## Run tests inside Docker
+
+You can use the provided Docker image to run tests inside a container if you do not want to install requirements.
+
+Build the Docker image:
+
+    docker build -t tdd-kit-cpp .
+
+Run the tests:
+
+    docker run --rm tdd-kit-cpp
+
+Mount your source folder in the container to keep sources updated:
+
+    docker run --rm -v ${PWD}/src tdd-kit-cpp
+
+Mount any directory as a build folder to speed up compilation time:
+
+    docker run --rm -v ${PWD}/src -v /tmp/build:/build tdd-kit-cpp
+
 ## Documentation
 
 * [Google Test Primer]
